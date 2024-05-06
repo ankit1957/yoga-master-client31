@@ -110,10 +110,10 @@ const NavBar = () => {
     useEffect(() => {
         if (scrollPosition > 100) {
             if (isHome) {
-                setNavBg('bg-white backdrop-filter backdrop-blur-xl bg-opacity-0 dark:bg-black dark:text-white text-black');
+                setNavBg('bg-white backdrop-filter backdrop-blur-xl bg-opacity-0 dark:bg-black dark:text-white text-white');
             }
             else {
-                setNavBg('bg-white dark:bg-black dark:text-white text-black');
+                setNavBg('bg-white dark:bg-black dark:text-white text-white');
             }
         } else {
             // setNavBg(`dark:text-white ${isHome ? 'text-white bg-transparent' : 'text-black dark:text-white dark:bg-black'}`);
