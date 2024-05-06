@@ -11,8 +11,9 @@ const AddClass = () => {
     const [image, setImage] = useState(null);
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        e.preventDefault();
+        // e.preventDefault();
         const formData = new FormData(e.target);
+        console.log(formData)
         const newData = Object.fromEntries(formData);
         formData.append('file', image);
 
